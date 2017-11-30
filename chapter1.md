@@ -12,6 +12,6 @@ ECMAScript 6 的兼容
 
 [  https://github.com/paulmillr/es6-shim](https://github.com/paulmillr/es6-shim)
 
-test[  
+![](/assets/import2.png)[  
 ](https://github.com/paulmillr/es6-shim)
 
