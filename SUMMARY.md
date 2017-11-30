@@ -9,4 +9,9 @@
     * Lesson 4 跨模块常量
     * Lesson 5 全局变量属性
 * Chapter 3
+    * Lesson 1 数组的解构赋值
+    * Lesson 2 对象的解构赋值
+    * Lesson 3 字符串的解构赋值
+    * Lesson 4 函数参数的解构赋值
+    * Lesson 5 解构赋值的用途
 
