@@ -41,5 +41,15 @@
 
 ---
 
+已申明变量的解构赋值
+
+```js
+<script type="text/traceur">
+	var x;
+	({x} = { x: 1 });
+	console.log(x);	//1
+</script>
+```
+
 
 
