@@ -1,6 +1,8 @@
 # ECMAScript6 编程艺术
 
-[http://quickgitbook.com/books/HaiDongSong/ecmaScript6LearnNotes\_b/\_book/](http://quickgitbook.com/books/HaiDongSong/ecmaScript6LearnNotes_b/_book/)本书地址
+[http://quickgitbook.com/books/HaiDongSong/ecmaScript6LearnNotes\_b/\_book/](http://quickgitbook.com/books/HaiDongSong/ecmaScript6LearnNotes_b/_book/)阅读此书
+
+[https://github.com/HaiDongSong/ecmaScript6LearnNotes\_b](https://github.com/HaiDongSong/ecmaScript6LearnNotes_b) github地址
 
 这个笔记参考麦子学院老师视频学习制作，这里表示感谢
 
