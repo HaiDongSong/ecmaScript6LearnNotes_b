@@ -43,5 +43,40 @@
 
 从函数返回多个值，可以使一个数组也可以是一个对象
 
+```js
+<script type="text/traceur">
+	function fun () {
+		return [1, 2, 3];
+	};
+
+	var [x, y, z] = fun();
+	console.log(x);	//1
+	console.log(y);	//2
+	console.log(z);	//3
+</script>
+```
+
+```js
+<script type="text/traceur">
+	function fun () {
+		return {
+			id  : "007",
+			name: "Conan",
+			age : 28
+		};
+	};
+
+	var { id, name, age } = fun();
+	console.log(id);	//007
+	console.log(name);	//Conan
+	console.log(age);	//28
+
+	var { id: person_id, name: person_name, age: person_age } = fun();
+	console.log(person_id);		//007
+	console.log(person_name);	//Conan
+	console.log(person_age);	//28
+</script>
+```
+
 
 
