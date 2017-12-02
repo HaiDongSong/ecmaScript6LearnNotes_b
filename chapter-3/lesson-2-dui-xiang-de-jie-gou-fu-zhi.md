@@ -27,17 +27,19 @@
 
 ```js
 <script type="text/traceur">
-	var { x = 3 } = {};
-	console.log(x);	//3
+    var { x = 3 } = {};
+    console.log(x);    //3
 
-	var { x, y = 5 } = { x: 1 };
-	console.log(x);	//1
-	console.log(y);	//5
+    var { x, y = 5 } = { x: 1 };
+    console.log(x);    //1
+    console.log(y);    //5
 
-	var { message: msg = "You Are A Person!" } = {};
-	console.log(msg);	//You Are A Person!
+    var { message: msg = "You Are A Person!" } = {};
+    console.log(msg);    //You Are A Person!
 </script>
 ```
+
+---
 
 
 
