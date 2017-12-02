@@ -1,0 +1,28 @@
+![](/assets/import8.png)
+
+```js
+<script type="text/traceur">
+	//	module.js
+	export const intVariantName = 100;
+	export const FloatVariantName = 3.14159165;
+	export const charVariantName = "variantValue";
+
+	//	use.js
+	import * as variant from './module';
+	console.log(variant.intVariantName);	//100
+	console.log(variant.FloatVariantName);	//3.14159165
+	console.log(variant.charVariantName);	//variantValue
+
+	//	otherUse.js
+	import { FloatVariantName, charVariantName } as variant from './module';
+	console.log(variant.FloatVariantName);	//3.14159165
+	console.log(variant.charVariantName);	//variantValue
+
+	//	OnlyInt.js
+	import intVariantName as variant from './module';
+	console.log(variant.intVariantName);	//100
+</script>
+```
+
+
+
