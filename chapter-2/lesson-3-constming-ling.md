@@ -1,17 +1,31 @@
-```
-    const pi = 3.141592653;
-    //pi = 3;
-    console.log.(pi.);
-```
+const 不能重复定义
 
+\`\`\`
 
-```
-		<script type="module">			
+		&lt;script type="module"&gt;	
+
+			var pi = 0;  //Error...
+
 			const pi = 3.141592653;
-			//pi = 3;
-			console.log(pi);
 
-			
-		</script>
+			//pi = 3;
+
+			console.log\(pi\);			
+
+		&lt;/script&gt;
+
+\`\`\`
+
+```js
+        <script type="module">            
+            const pi = 3.141592653;
+
+            //pi = 3;
+            console.log(pi);
+
+
+        </script>
 ```
+
+
 
