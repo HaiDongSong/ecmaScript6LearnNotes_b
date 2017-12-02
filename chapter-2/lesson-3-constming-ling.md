@@ -38,22 +38,34 @@ const 不能重复定义
 
 ```js
 <script type="text/traceur">
-	const arr = [];
-	console.log(arr);
-	console.log(arr.length);
-	console.log("------");
-	arr.push("Hello world!");
-	console.log(arr);
-	console.log(arr.length);
-	console.log("------");
-	arr.length = 0;
-	console.log(arr);
-	console.log(arr.length);
-	console.log("------");
+    const arr = [];
+    console.log(arr);
+    console.log(arr.length);
+    console.log("------");
+    arr.push("Hello world!");
+    console.log(arr);
+    console.log(arr.length);
+    console.log("------");
+    arr.length = 0;
+    console.log(arr);
+    console.log(arr.length);
+    console.log("------");
 
-	// 错误用法
-	arr = ["Hello Everyone!"];
+    // 错误用法
+    arr = ["Hello Everyone!"];
 </script>
+```
+
+```js
+//彻底冻结对象的函数
+var constantize = (obj) => {
+	Object.freeze(obj);
+	Object.keys(obj).forEach( (key, value) => {
+		if ( typeof obj[key] === 'object' ) {
+			constantize( obj[key] );
+		};
+	});
+};
 ```
 
 
