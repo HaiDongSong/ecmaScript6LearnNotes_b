@@ -110,36 +110,103 @@
 
 ```js
 <script type="text/traceur">
-	var jsonData = {
-		id: "007",
-		name: "Conan",
-		age: 28,
-		score: {
-			Chinese: 98,
-			Math: 148,
-			English: 107
-		}
-	};
-	console.log(jsonData);
+    var jsonData = {
+        id: "007",
+        name: "Conan",
+        age: 28,
+        score: {
+            Chinese: 98,
+            Math: 148,
+            English: 107
+        }
+    };
+    console.log(jsonData);
 
-	console.log("ES5:");
-	console.log("Person's Number is:" + jsonData.id);
-	console.log("Person's Name is:" + jsonData.name);
-	console.log("Person's age is:" + jsonData.age);
-	console.log("Person's Chinese score is:" + jsonData.score.Chinese);
-	console.log("Person's Math score is:" + jsonData.score.Math);
-	console.log("Person's English score is:" + jsonData.score.English);
+    console.log("ES5:");
+    console.log("Person's Number is:" + jsonData.id);
+    console.log("Person's Name is:" + jsonData.name);
+    console.log("Person's age is:" + jsonData.age);
+    console.log("Person's Chinese score is:" + jsonData.score.Chinese);
+    console.log("Person's Math score is:" + jsonData.score.Math);
+    console.log("Person's English score is:" + jsonData.score.English);
 
-	console.log("ES6:");
-	let { id: number, name, age, score: score } = jsonData;
-	console.log("Person's Number is:" + number);
-	console.log("Person's Name is:" + name);
-	console.log("Person's age is:" + age);
-	console.log("Person's Chinese score is:" + score.Chinese);
-	console.log("Person's Math score is:" + score.Math);
-	console.log("Person's English score is:" + score.English);
+    console.log("ES6:");
+    let { id: number, name, age, score: score } = jsonData;
+    console.log("Person's Number is:" + number);
+    console.log("Person's Name is:" + name);
+    console.log("Person's age is:" + age);
+    console.log("Person's Chinese score is:" + score.Chinese);
+    console.log("Person's Math score is:" + score.Math);
+    console.log("Person's English score is:" + score.English);
 </script>
 ```
+
+---
+
+函数参数的默认值
+
+```js
+<script type="text/traceur">
+	jQuery.ajax({
+	  url: '/path/to/file',
+	  type: 'POST',
+	  dataType: 'xml/html/script/json/jsonp',
+	  data: {param1: 'value1'},
+	  complete: function(xhr, textStatus) {
+	    //called when complete
+	  },
+	  success: function(data, textStatus, xhr) {
+	    //called when successful
+	  },
+	  error: function(xhr, textStatus, errorThrown) {
+	    //called when there is an error
+	  }
+	});
+	
+	jQuery.ajax = function (url, {
+		async = true,
+		beforeSend = function() {},
+		cache = true,
+		complete = function() {},
+		crossDomain = false,
+		global = true,
+		// ...more config
+	}) {
+		// ... do stuff
+	};
+	//	避免了在函数体内部再写 var foo = config.foo || 'default foo'; 这样的语句
+</script>
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
