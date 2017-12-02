@@ -54,7 +54,33 @@ console.log(second);//undefined
 </script>
 ```
 
---------
+ 
+
+---
+
+制定默认值
+
+```js
+<script type="text/traceur">
+	var [temp = "string"] = [];
+	console.log(temp);	//string
+
+	var [temp = "string"] = ["tempString"];
+	console.log(temp);	//tempString
+
+	var [x = "aaa", y] = ["bbb"];
+	console.log(x);	//bbb
+	console.log(y);	//undefined
+
+	var [m, n = "aaa"] = ["bbb"];
+	console.log(m);	//bbb
+	console.log(n);	//aaa
+
+	var [p, q = "aaa"] = ["bbb", undefined];
+	console.log(p);	//bbb
+	console.log(q);	//aaa
+</script>
+```
 
 
 
