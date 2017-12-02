@@ -22,17 +22,17 @@ const 不能重复定义
 </script>
 ```
 
-```
+```js
 <script type="text/traceur">
-	const person = {};
-	person.name  = "Zhangsan";
-	person.age   = 30;
+    const person = {};
+    person.name  = "Zhangsan";
+    person.age   = 30;
 
-	console.log(person.name);
-	console.log(person.age);
-	console.log(person);
+    console.log(person.name);
+    console.log(person.age);
+    console.log(person);
 
-	person = {};	//person is read-only
+    person = {};    //person is read-only
 </script>
 ```
 
