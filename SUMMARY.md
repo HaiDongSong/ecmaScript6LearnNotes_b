@@ -6,7 +6,7 @@
   * [Lesson 1 Let命令](chapter-2/lesson-1-letming-ling.md)
   * [Lesson 2 块级作用域](chapter-2/lesson-2-kuai-ji-zuo-yong-yu.md)
   * [Lesson 3 const命令](chapter-2/lesson-3-constming-ling.md)
-  * Lesson 4 跨模块常量
+  * [Lesson 4 跨模块常量](chapter-2/lesson-4-kua-mo-kuai-chang-liang.md)
   * Lesson 5 全局变量属性
 * [Chapter 3](chapter-3.md)
   * Lesson 1 数组的解构赋值

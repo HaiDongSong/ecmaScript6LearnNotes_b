@@ -36,5 +36,25 @@ const 不能重复定义
 </script>
 ```
 
+```js
+<script type="text/traceur">
+	const arr = [];
+	console.log(arr);
+	console.log(arr.length);
+	console.log("------");
+	arr.push("Hello world!");
+	console.log(arr);
+	console.log(arr.length);
+	console.log("------");
+	arr.length = 0;
+	console.log(arr);
+	console.log(arr.length);
+	console.log("------");
+
+	// 错误用法
+	arr = ["Hello Everyone!"];
+</script>
+```
+
 
 
