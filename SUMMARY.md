@@ -13,5 +13,5 @@
   * [Lesson 2 对象的解构赋值](chapter-3/lesson-2-dui-xiang-de-jie-gou-fu-zhi.md)
   * [Lesson 3 字符串的解构赋值](chapter-3/lesson-3-zi-fu-chuan-de-jie-gou-fu-zhi.md)
   * [Lesson 4 函数参数的解构赋值](chapter-3/lesson-4-han-shu-can-shu-de-jie-gou-fu-zhi.md)
-  * Lesson 5 解构赋值的用途
+  * [Lesson 5 解构赋值的用途](chapter-3/lesson-5-jie-gou-fu-zhi-de-yong-tu.md)
 
