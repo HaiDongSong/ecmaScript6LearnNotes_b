@@ -45,9 +45,25 @@
 
 ```js
 <script type="text/traceur">
-	var x;
-	({x} = { x: 1 });
-	console.log(x);	//1
+    var x;
+    ({x} = { x: 1 });
+    console.log(x);    //1
+</script>
+
+```
+
+---
+
+
+
+现有对象的方法
+
+```js
+<script type="text/traceur">
+	console.log(Math.sin(Math.PI/6));	//0.49999999999999994
+
+	let { sin, cos, tan, log } = Math;
+	console.log(sin(Math.PI/6));		//0.49999999999999994
 </script>
 ```
 
