@@ -1,5 +1,7 @@
 ![](/assets/import9.png)
 
+数组解构
+
 ```js
 <script type="text/traceur">
     let [foo, [[bar], base]] = [1, [[2], 3]];
@@ -21,20 +23,24 @@
 </script>
 ```
 
+---
+
 不完全解构
 
 ```js
 <script type="text/traceur">
-	let [x, y] = [1, 2, 3];
-	console.log(x);	//1
-	console.log(y);	//2
+    let [x, y] = [1, 2, 3];
+    console.log(x);    //1
+    console.log(y);    //2
 
-	let [a, [b], c] = [1, [2, 3], 4];
-	console.log(a);	//1
-	console.log(b);	//2
-	console.log(c);	//4
+    let [a, [b], c] = [1, [2, 3], 4];
+    console.log(a);    //1
+    console.log(b);    //2
+    console.log(c);    //4
 </script>
 ```
+
+---
 
 解构不成功
 
@@ -47,6 +53,8 @@ console.log(first); //100
 console.log(second);//undefined
 </script>
 ```
+
+--------
 
 
 
