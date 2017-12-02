@@ -5,7 +5,7 @@
 * [Chapter 2](chapter-2.md)
   * [Lesson 1 Let命令](chapter-2/lesson-1-letming-ling.md)
   * Lesson 2 块级作用域
-  * Lesson 3 const命令
+  * [Lesson 3 const命令](chapter-2/lesson-3-constming-ling.md)
   * Lesson 4 跨模块常量
   * Lesson 5 全局变量属性
 * [Chapter 3](chapter-3.md)
