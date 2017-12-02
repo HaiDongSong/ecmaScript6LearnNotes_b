@@ -45,36 +45,60 @@
 
 ```js
 <script type="text/traceur">
-	function fun () {
-		return [1, 2, 3];
-	};
+    function fun () {
+        return [1, 2, 3];
+    };
 
-	var [x, y, z] = fun();
-	console.log(x);	//1
-	console.log(y);	//2
-	console.log(z);	//3
+    var [x, y, z] = fun();
+    console.log(x);    //1
+    console.log(y);    //2
+    console.log(z);    //3
 </script>
 ```
 
 ```js
 <script type="text/traceur">
-	function fun () {
-		return {
-			id  : "007",
-			name: "Conan",
-			age : 28
-		};
+    function fun () {
+        return {
+            id  : "007",
+            name: "Conan",
+            age : 28
+        };
+    };
+
+    var { id, name, age } = fun();
+    console.log(id);    //007
+    console.log(name);    //Conan
+    console.log(age);    //28
+
+    var { id: person_id, name: person_name, age: person_age } = fun();
+    console.log(person_id);        //007
+    console.log(person_name);    //Conan
+    console.log(person_age);    //28
+</script>
+```
+
+---
+
+函数参数的定义
+
+```js
+<script type="text/traceur">
+	// 参数是一组有次序的值
+	function fun ([x, y, z]) {
+		//x = 100;
+		//y = 200;
+		//z = 300;
 	};
+	fun([100, 200, 300]);
 
-	var { id, name, age } = fun();
-	console.log(id);	//007
-	console.log(name);	//Conan
-	console.log(age);	//28
-
-	var { id: person_id, name: person_name, age: person_age } = fun();
-	console.log(person_id);		//007
-	console.log(person_name);	//Conan
-	console.log(person_age);	//28
+	// 参数是一组无次序的值
+	function fun ({id, name, age}) {
+		//id   = "007";
+		//name = "Conan";
+		//age  = 28;
+	};
+	fun({id: "007", name: "Conan", age: 28});
 </script>
 ```
 
