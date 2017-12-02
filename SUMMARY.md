@@ -7,7 +7,7 @@
   * [Lesson 2 块级作用域](chapter-2/lesson-2-kuai-ji-zuo-yong-yu.md)
   * [Lesson 3 const命令](chapter-2/lesson-3-constming-ling.md)
   * [Lesson 4 跨模块常量](chapter-2/lesson-4-kua-mo-kuai-chang-liang.md)
-  * Lesson 5 全局变量属性
+  * [Lesson 5 全局变量属性](chapter-2/lesson-5-quan-ju-bian-liang-shu-xing.md)
 * [Chapter 3](chapter-3.md)
   * Lesson 1 数组的解构赋值
   * Lesson 2 对象的解构赋值
