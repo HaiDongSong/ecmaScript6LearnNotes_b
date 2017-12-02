@@ -1,26 +1,20 @@
-![](/assets/import7.png)\`\`\`&lt;title&gt;第一种场景&lt;/title&gt;
+![](/assets/import7.png)
 
-&lt;script type="text/javascript"&gt;
+```js
+//第一种场景
+<script type="text/javascript">
+	var time = new Date();
 
-	var time = new Date\(\);
-
-
-
-	function fun\(\) {
-
-		console.log\(time\);
-
-		if \(false\) {
-
+	function fun() {
+		console.log(time);
+		if (false) {
 			var time = "Hello World!";
-
 		};
-
 	};
 
+	fun();	//undefined
+</script>
+```
 
 
-	fun\(\);	//undefined
-
-&lt;/script&gt;\`\`\`
 
