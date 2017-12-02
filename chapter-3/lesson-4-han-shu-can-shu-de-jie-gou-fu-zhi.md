@@ -2,11 +2,11 @@
 
 ```js
 <script type="text/traceur">
-	function sum([x, y]) {
-		return x + y;
-	};
+    function sum([x, y]) {
+        return x + y;
+    };
 
-	console.log(sum([1, 2]));	//3
+    console.log(sum([1, 2]));    //3
 </script>
 ```
 
@@ -14,13 +14,28 @@
 
 ```js
 <script type="text/traceur">
-	function fun ({x = 0, y = 0} = {}) {
+    function fun ({x = 0, y = 0} = {}) {
+        return [x, y];
+    };
+
+    console.log(fun({x: 100, y: 200}));    //[100, 200]
+    console.log(fun({x: 100}));            //[100, 0]
+    console.log(fun({}));                //[0, 0]
+    console.log(fun());                    //[0, 0]
+</script>
+```
+
+函数参数解构赋值的默认值undefined
+
+```js
+<script type="text/traceur">
+	function fun ({x, y} = { x: 0, y: 0 }) {
 		return [x, y];
 	};
 
 	console.log(fun({x: 100, y: 200}));	//[100, 200]
-	console.log(fun({x: 100}));			//[100, 0]
-	console.log(fun({}));				//[0, 0]
+	console.log(fun({x: 100}));			//[100, undefined]
+	console.log(fun({}));				//[undefined, undefined]
 	console.log(fun());					//[0, 0]
 </script>
 ```
