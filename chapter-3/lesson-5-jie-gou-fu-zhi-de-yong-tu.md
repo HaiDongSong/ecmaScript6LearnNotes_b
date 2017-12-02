@@ -182,5 +182,44 @@
 
 遍历Map结构
 
+```js
+<script type="text/traceur">
+	var map = new Map();
+	map.set("id", "007");
+	map.set("name", "Conan");
+
+	console.log(map);
+	console.log(typeof(map));
+
+	//	获取键名和键值
+	for (let [key, value] of map) {
+		console.log(key + " is " + value);
+	};
+	// id is 007
+	// name is Conan
+	
+	//	获取键名
+	for (let [key] of map) {
+		console.log(key);
+	};
+	// id
+	// name
+	
+	for (let [, value] of map) {
+		console.log(value);
+	};
+	// 007
+	// Conan
+</script>
+```
+
+输入模块的制定方法
+
+```js
+<script type="text/traceur">
+	const { SourceMapConsumer, SourceNode } = require("source-map");
+</script>
+```
+
 
 
