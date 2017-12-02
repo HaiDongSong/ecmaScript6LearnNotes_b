@@ -10,7 +10,7 @@
   * [Lesson 5 全局变量属性](chapter-2/lesson-5-quan-ju-bian-liang-shu-xing.md)
 * [Chapter 3](chapter-3.md)
   * [Lesson 1 数组的解构赋值](chapter-3/lesson-1-shu-zu-de-jie-gou-fu-zhi.md)
-  * Lesson 2 对象的解构赋值
+  * [Lesson 2 对象的解构赋值](chapter-3/lesson-2-dui-xiang-de-jie-gou-fu-zhi.md)
   * Lesson 3 字符串的解构赋值
   * Lesson 4 函数参数的解构赋值
   * Lesson 5 解构赋值的用途
