@@ -84,21 +84,60 @@
 
 ```js
 <script type="text/traceur">
-	// 参数是一组有次序的值
-	function fun ([x, y, z]) {
-		//x = 100;
-		//y = 200;
-		//z = 300;
-	};
-	fun([100, 200, 300]);
+    // 参数是一组有次序的值
+    function fun ([x, y, z]) {
+        //x = 100;
+        //y = 200;
+        //z = 300;
+    };
+    fun([100, 200, 300]);
 
-	// 参数是一组无次序的值
-	function fun ({id, name, age}) {
-		//id   = "007";
-		//name = "Conan";
-		//age  = 28;
+    // 参数是一组无次序的值
+    function fun ({id, name, age}) {
+        //id   = "007";
+        //name = "Conan";
+        //age  = 28;
+    };
+    fun({id: "007", name: "Conan", age: 28});
+</script>
+```
+
+让代码看起来更清晰
+
+---
+
+提取json数据
+
+```js
+<script type="text/traceur">
+	var jsonData = {
+		id: "007",
+		name: "Conan",
+		age: 28,
+		score: {
+			Chinese: 98,
+			Math: 148,
+			English: 107
+		}
 	};
-	fun({id: "007", name: "Conan", age: 28});
+	console.log(jsonData);
+
+	console.log("ES5:");
+	console.log("Person's Number is:" + jsonData.id);
+	console.log("Person's Name is:" + jsonData.name);
+	console.log("Person's age is:" + jsonData.age);
+	console.log("Person's Chinese score is:" + jsonData.score.Chinese);
+	console.log("Person's Math score is:" + jsonData.score.Math);
+	console.log("Person's English score is:" + jsonData.score.English);
+
+	console.log("ES6:");
+	let { id: number, name, age, score: score } = jsonData;
+	console.log("Person's Number is:" + number);
+	console.log("Person's Name is:" + name);
+	console.log("Person's age is:" + age);
+	console.log("Person's Chinese score is:" + score.Chinese);
+	console.log("Person's Math score is:" + score.Math);
+	console.log("Person's English score is:" + score.English);
 </script>
 ```
 
