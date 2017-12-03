@@ -16,6 +16,6 @@ ECMAScript 6 的兼容
 
 ---
 
-[  
-](https://github.com/paulmillr/es6-shim)
+[  ![](/assets/import14.png)  
+](https://github.com/paulmillr/es6-shim)![](/assets/import15.png)
 
