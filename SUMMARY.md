@@ -1,6 +1,6 @@
 # Summary
 
-* [Instroduction](README.md)
+* [Instroduction 引言](README.md)
 * [Chapter 1 简介](chapter1.md)
 * [Chapter 2 变量](chapter-2.md)
   * [Lesson 1 Let命令](chapter-2/lesson-1-letming-ling.md)
